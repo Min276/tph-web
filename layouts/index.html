@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thate Pan Hub</title>
+    <link rel="icon" href="../images/TPHLogo1.svg">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+</head>
+<body>
+    
+<section class="w-full text-white bg-[#57475b]">
+  <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-16">
+    <div class="p-4 flex flex-row items-center justify-between">
+      <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
+          <img class="w-28 md:w-36" src="../images/TPHLogo1.svg" alt="Brand Logo">
+      </a>
+      <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+        <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+          <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+          <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+        </svg>
+      </button>
+    </div>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row md:z-[1]">
+        <a class="px-3 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Home</a>
+      <div @click.away="open = false" class="relative" x-data="{ open: false }">
+        <button @click="open = !open" class="flex flex-row items-center w-full px-3 py-2 mt-2 text-base font-normal text-left bg-transparent rounded-lg dark-mode:bg-transparent  md:w-auto md:inline md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline">
+          <span>Courses</span>
+          <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-52">
+          <div class="py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+            <a class="block px-4 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-[#57475b]" href="#">Suu Sann (Age 7-9)</a>
+            <a class="block px-4 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-[#57475b]" href="#">Lae Lar (Age 10-13)</a>
+            <a class="block px-4 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-[#57475b]" href="#">Phan Tee (Age 14-16)</a>
+          </div>
+        </div>
+      </div>    
+      <a class="px-3 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">About</a>
+      <a class="px-3 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Insights</a>
+      <a class="px-3 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">News</a>
+      <a class="px-4 py-2 mt-2 text-base font-medium text-gray-900 bg-[#ffb700] rounded-full dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline md:ml-6 md:mr-6" href="#">Support Us</a>
+    </nav>
+  </div>
+</section>
+
+<section class="w-full text-white bg-[#57475b]">
+    <div class="flex flex-row max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-28">
+        <div class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-start">
+           <h2 class="text-3xl font-semibold pb-8 leading-11 text-[#ffb700]" style="width: 28rem;">Computer Science & <br> Artificial Intelligence for <br> Every Kid in Myanmar</h2>
+           <p class="text-base font-normal leading-8" style="font-size: 1.1rem">
+             We're a non-profit social enterprise based<br>
+             in Myanmar, introducing Computer Science<br>
+             for kids and teenagers across Myanmar<br>
+             with carefully-tailored, interactive online<br>
+             classes for free.</p>
+        </div>
+        <div class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row" style="margin-top: -6rem;margin-right: -6rem;">
+           <img src="../images/Group 904.svg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="w-full text-[#57475b]">
+    <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-28 pb-16">
+        <h2 class="text-center text-2xl font-semibold pt-20 pb-44">Free Courses</h2>
+        <div class="flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
+            <div class="w-1/3 bg-[#57475b] text-white rounded-md" style="padding: 4.65rem;">
+                <div class="relative" style="margin-top: -11rem;">
+                    <img class="absolute" style="transform: scale(1.4);" src="../images/Suu Sann.svg" alt="">
+                    <img class="scale-125" src="../images/suusann.png" alt="">
+                </div>
+                <h3 class="text-xl font-semibold pt-16 leading-5 text-center">Suu Sann</h3>
+                <h5 class="text-base font-semibold leading-11 text-center">Age 7 - 9</h5>
+                <ul class="text-base font-normal leading-9 mb-16" style="list-style: unset;">
+                    <li>Basic Coding for Kids 1</li>
+                    <li>Basic Coding for Kids 2</li>
+                    <li>Hello AI</li>
+                </ul>
+                <a href="#" class="px-4 py-2 mt-2 text-base font-medium bg-[#ffb700] text-[#57475b] rounded-full md:mt-0 md:ml-6 md:mr-6">Learn More</a>
+            </div>
+            <div class="w-1/3 bg-[#57475b] text-white rounded-md mx-8" style="padding: 4.65rem;">
+                <div class="relative" style="margin-top: -11rem;">
+                    <img class="absolute" style="transform: scale(1.2);" src="../images/book male.svg" alt="">
+                    <img class="scale-125" src="../images/laelar.png" alt="">
+                </div>
+                <h3 class="text-xl font-semibold pt-16 leading-5 text-center">Lae Lar</h3>
+                <h5 class="text-base font-semibold leading-11 text-center">Age 10 - 13</h5>
+                <ul class="text-base font-normal leading-9 mb-16" style="list-style: unset;">
+                    <li>Basic Coding for Kids 1</li>
+                    <li>Basic Coding for Kids 2</li>
+                    <li>Basic Coding for Kids 3</li>
+                    <li>3D for Kids</li>
+                    <li>Hello AI</li>
+                </ul>
+                <a href="#" class="px-4 py-2 mt-2 text-base font-medium bg-[#ffb700] text-[#57475b] rounded-full md:mt-0 md:ml-6 md:mr-6">Learn More</a>
+            </div>
+            <div class="w-1/3 bg-[#57475b] text-white rounded-md" style="padding: 4.65rem;">
+                <div class="relative" style="margin-top: -11rem;">
+                    <img class="absolute" style="transform: scale(1);" src="../images/Oo Oo playing.svg" alt="">
+                    <img class="scale-125" src="../images/phan-tee.png" alt="">
+                </div>
+                <h3 class="text-xl font-semibold pt-16 leading-5 text-center">Phan Tee</h3>
+                <h5 class="text-base font-semibold leading-11 text-center">Age 14 - 16</h5>
+                <ul class="text-base font-normal leading-9 mb-16" style="list-style: unset;">
+                    <li>Basic Coding for Kids 1</li>
+                    <li>Basic Coding for Kids 2</li>
+                    <li>Hello AI</li>
+                </ul>
+                <a href="#" class="px-4 py-2 mt-2 text-base font-medium bg-[#ffb700] text-[#57475b] rounded-full md:mt-0 md:ml-6 md:mr-6">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-full text-white bg-[#E88868]">
+    <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-28 pb-16">
+        <h2 class="text-center text-2xl font-semibold pt-20 pb-16">What We Do</h2>
+        <div class="flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
+            <div class="w-1/4 text-white rounded-md text-center">
+                <h3 class="text-2xl font-semibold my-5">Educate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea tempore aspernatur nemo quasi eveniet dolore neque mollitia architecto, enim consequuntu earum.</p>
+            </div>
+            <div class="w-1/4 text-white rounded-md mx-12 text-center">
+                <h3 class="text-2xl font-semibold my-5">Advocate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea tempore aspernatur nemo quasi eveniet dolore neque mollitia architecto, enim consequuntu earum.</p>
+            </div>
+            <div class="w-1/4 text-white rounded-md mr-12 text-center">
+                <h3 class="text-2xl font-semibold my-5">Empower</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea tempore aspernatur nemo quasi eveniet dolore neque mollitia architecto, enim consequuntu earum.</p>
+            </div>
+            <div class="w-1/4 text-white rounded-md text-center">
+                <h3 class="text-2xl font-semibold my-5">Innovate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea tempore aspernatur nemo quasi eveniet dolore neque mollitia architecto, enim consequuntu earum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-full text-white bg-[#7DCDC7] pt-20 pb-16">
+    <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-center md:px-6 md:flex-row lg:px-28">
+        <img class="absolute scale-60" style="top: 123em; right: 1.5em;" src="../images/circuit2.svg" alt="">
+        <div class="w-1/4 flex flex-col md:justify-center md:items-center">
+            <div class="w-full text-white rounded-md">
+                <h3 class="text-2xl font-semibold my-10 leading-10" style="letter-spacing: 0.03rem;">Thate Pan Hub <br> in Numbers</h3>
+            </div>
+            <div class="w-full text-white rounded-md text-center bg-white text-[#57475b] p-4 flex justify-center items-center flex-col">
+                <img class="my-5 scale-85" src="../images/Working Member.svg" alt="">
+                <h3 class="text-base font-normal">Working Members</h3>
+                <p class="text-3xl font-bold my-5">160+</p>
+            </div>
+        </div>
+        <div class="w-1/4 flex flex-col md:justify-center md:items-center mx-4">
+            <div class="w-full mb-4 text-white rounded-md text-center bg-white text-[#57475b] p-4 flex justify-center items-center flex-col">
+                <img class="my-5 scale-85" src="../images/Student.svg" alt="">
+                <h3 class="text-base font-normal">Students</h3>
+                <p class="text-3xl font-bold my-5">1,104</p>
+            </div>
+            <div class="w-full text-white rounded-md text-center bg-white text-[#57475b] p-4 flex justify-center items-center flex-col">
+                <img class="my-5 scale-90" src="../images/Course.svg" alt="">
+                <h3 class="text-base font-normal">Free Courses</h3>
+                <p class="text-3xl font-bold my-5">10+</p>
+            </div>
+        </div>
+        <div class="w-1/4 flex flex-col md:justify-center md:items-center">
+            <div class="w-full text-white rounded-md text-center bg-white text-[#57475b] p-4 flex justify-center items-center flex-col">
+                <img class="my-5 scale-75" src="../images/Ed.svg" alt="">
+                <h3 class="text-base font-normal">Educators Trained</h3>
+                <p class="text-3xl font-bold my-5">1,704+</p>
+            </div>
+            <div class="w-full text-white rounded-md">
+                <h3 class="text-2xl font-semibold my-10 leading-10" style="letter-spacing: 0.03rem;">And <br> Still Counting</h3>
+            </div>
+        </div>
+        <img class="absolute scale-60" style="top: 148em; left: 1.5em;" src="../images/circuit.svg" alt="">
+    </div>
+</section>
+    
+</body>
+</html>
