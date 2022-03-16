@@ -5,16 +5,32 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: 'Poppins', 'sans-serif'
+@layer components {
+
+    .card{
+        @apply flex flex-col rounded-md relative
+    }
+
 }
-.leading-11{
-    line-height: 3rem;
-    letter-spacing: 0.06rem;
-}
-.scale-60{
-    transform: scale(0.6);
-}
-.scale-85{
-    transform: scale(0.85);
+
+@layer utilities {
+
+    body{
+        font-family: 'Poppins', 'sans-serif'
+    }
+    .card-body{
+        padding: 2rem 1rem 2rem 1rem;
+        flex: 1 1 auto;    
+    }
+    .leading-11{
+        line-height: 3rem;
+        letter-spacing: 0.06rem;
+    }
+    .scale-60{
+        transform: scale(0.6);
+    }
+    .scale-85{
+        transform: scale(0.85);
+    }
+
 }
