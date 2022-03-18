@@ -11,6 +11,13 @@
         @apply flex flex-col rounded-md relative
     }
 
+    .button{
+        @apply px-4 py-2 mt-2 text-base font-medium
+         bg-transparent text-[#ffb700] border-3 
+         border-[#ffb700] hover:bg-[#ffb700] 
+         hover:text-[#57475b] rounded-full md:mt-0
+         md:ml-6 md:mr-6 mb-12 md:mb-0
+    }
 }
 
 @layer utilities {
@@ -46,6 +53,48 @@
     }
     .border-3{
         border-width: 3px;
+    }
+    .sm-one{
+        transform: rotate(215deg) scale(.7);
+    }
+    .sm-one:hover{
+        transform: rotate(35deg) scale(.7);
+        transition: all 0.2s ease;
+    }
+    .lg-one{
+        transform: rotate(215deg) scale(1.25);
+    }
+    .lg-one:hover{
+        transform: rotate(35deg) scale(1.25);
+        transition: all 0.2s ease;
+    }
+    .sm-two{
+        transform: rotate(215deg) scale(.7);
+    }
+    .sm-two:hover{
+        transform: rotate(345deg) scale(.7);
+        transition: all 0.2s ease;
+    }
+    .lg-two{
+        transform: rotate(215deg) scale(1.25);
+    }
+    .lg-two:hover{
+        transform: rotate(345deg) scale(1.25);
+        transition: all 0.2s ease;
+    }
+    .sm-three{
+        transform: rotate(345deg) scale(.7);
+    }
+    .sm-three:hover{
+        transform: rotate(135deg) scale(.7);
+        transition: all 0.2s ease;
+    }
+    .lg-three{
+        transform: rotate(345deg) scale(1.25);
+    }
+    .lg-three:hover{
+        transform: rotate(135deg) scale(1.25);
+        transition: all 0.2s ease;
     }
 }
 
