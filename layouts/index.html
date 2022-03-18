@@ -7,6 +7,7 @@
     <title>Thate Pan Hub</title>
     <link rel="icon" href="../images/TPHLogo1.svg">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 <body>
@@ -49,9 +50,9 @@
 
 <section class="w-full text-white bg-[#57475b]">
     <div class="flex flex-row max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-28">
-        <div class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-start">
-           <h2 class="text-3xl font-semibold pb-8 leading-11 text-[#ffb700]" style="width: 28rem;">Computer Science & <br> Artificial Intelligence for <br> Every Kid in Myanmar</h2>
-           <p class="text-base font-normal leading-8" style="font-size: 1.1rem">
+        <div class="flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-start">
+           <h2 class="flex justify-center mt-10 md:mt-0 md:justify-start md:text-3xl text-[1.65rem] md:w-[28rem] font-semibold pb-8 text-[#ffb700] leading-11 header" style="line-height: 3rem;">Computer Science & <br> Artificial Intelligence for <br> Every Kid in Myanmar</h2>
+           <p class="flex justify-center md:text-[1.1rem] text-[1rem] mb-12 md:mb-0 md:justify-start text-base md:w-[28rem] font-normal leading-8 intro">
              We're a non-profit social enterprise based<br>
              in Myanmar, introducing Computer Science<br>
              for kids and teenagers across Myanmar<br>
@@ -59,7 +60,9 @@
              classes for free.</p>
         </div>
         <div class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row" style="margin-top: -6rem;margin-right: -6rem;">
-           <img src="../images/Group 904.svg" alt="">
+            <button id="typewriter" class="px-4 py-2 mt-2 text-base font-medium border-3 border-[#E88868] text-[#57475b] rounded-full bg-white absolute  md:mt-0" 
+            style="width: fit-content; top: 13rem; right: 8rem;">setLightSwitch(on)</button>
+            <img src="../images/Group 904.svg" alt="">
         </div>
     </div>
 </section>
@@ -276,7 +279,7 @@
                 </div>
             </div>
             <div class="flex flex-col md:justify-center md:items-center" style="width: 32rem">
-                <div class="card flex-row">
+                <div class="card md:flex-row">
                     <img class="w-40 rounded-lg" src="../images/nature.jfif" alt="">
                     <div class="card-body" style="padding: 1rem">
                         <h3>Lorem ipsum dolor, sit amet<br>
@@ -284,7 +287,7 @@
                             ipsum dolor elit.</h3>
                     </div>
                 </div>
-                <div class="card flex-row my-8">
+                <div class="card md:flex-row my-8">
                     <img class="w-40 rounded-lg" src="../images/nature.jfif" alt="">
                     <div class="card-body"  style="padding: 1rem">
                         <h3>Lorem ipsum dolor, sit amet<br>
@@ -292,7 +295,7 @@
                             ipsum dolor elit.</h3>
                     </div>
                 </div>
-                <div class="card flex-row">
+                <div class="card md:flex-row">
                     <img class="w-40 rounded-lg" src="../images/nature.jfif" alt="">
                     <div class="card-body"  style="padding: 1rem">
                         <h3>Lorem ipsum dolor, sit amet<br>
@@ -372,6 +375,8 @@
         Copyright &copy; 2022 THATE PAN HUB
     </div>
 </section>
+
+<script src="./js/typewriter.js"></script>
 
 </body>
 </html>

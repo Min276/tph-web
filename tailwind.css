@@ -32,5 +32,16 @@
     .scale-85{
         transform: scale(0.85);
     }
+    .border-3{
+        border-width: 3px;
+    }
+}
 
+@media (max-width: 399px) { 
+    .header{
+      font-size: calc(1.09rem + 0.9vw);
+    }
+    .intro{
+        font-size: 0.778rem;
+    }
 }
