@@ -18,6 +18,7 @@
          hover:text-[#57475b] rounded-full md:mt-0
          md:ml-6 md:mr-6 mb-12 md:mb-0
     }
+    
 }
 
 @layer utilities {
@@ -28,6 +29,9 @@
     .card-body{
         padding: 2rem 1rem 2rem 1rem;
         flex: 1 1 auto;    
+    }
+    .border-line{
+        border-top: 3px solid #ffb700;
     }
     .leading-11{
         line-height: 3rem;
@@ -106,4 +110,15 @@
         font-size: 0.95rem;
         text-align: justify;
     }
+}
+
+
+@media (max-width: 767px) {
+     .mobile-nav {
+         position: fixed;
+         top: 0;
+         right: 0;
+         left: 0;
+         z-index: 1;
+     }
 }

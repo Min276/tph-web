@@ -12,7 +12,7 @@
 </head>
 <body>
     
-<section class="w-full text-white bg-[#57475b]">
+<section class="w-full text-white bg-[#57475b] mobile-nav">
   <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-16">
     <div class="p-4 flex flex-row items-center justify-between">
       <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline">
@@ -25,25 +25,25 @@
         </svg>
       </button>
     </div>
-    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row md:z-[1]">
-        <a class="px-3 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Home</a>
+    <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden left-0 md:flex md:justify-end md:flex-row md:z-[1]">
+        <a class="px-3 py-2 mt-2 text-base font-normal bg-transparent rounded-lg md:mt-0 md:ml-2 text-[#ffb700] font-medium" href="#">Home</a>
       <div @click.away="open = false" class="relative" x-data="{ open: false }">
-        <button @click="open = !open" class="flex flex-row items-center w-full px-3 py-2 mt-2 text-base font-normal text-left bg-transparent rounded-lg dark-mode:bg-transparent  md:w-auto md:inline md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 focus:outline-none focus:shadow-outline">
+        <button @click="open = !open" class="flex flex-row items-center w-full px-3 py-2 mt-2 text-base font-normal text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-2 text-white font-normal hover:text-[#ffb700]">
           <span>Courses</span>
           <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
         </button>
         <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-52">
-          <div class="py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
-            <a class="block px-4 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-[#57475b]" href="#">Suu Sann (Age 7-9)</a>
-            <a class="block px-4 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-[#57475b]" href="#">Lae Lar (Age 10-13)</a>
-            <a class="block px-4 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline text-[#57475b]" href="#">Phan Tee (Age 14-16)</a>
+          <div class="py-2 bg-white rounded-md shadow text-[#57475b] font-normal border-line">
+            <a class="block px-4 py-2 mt-2 text-base font-normal bg-transparent rounded-lg md:mt-0 hover:text-[#ffb700]" href="#">Suu Sann (Age 7-9)</a>
+            <a class="block px-4 py-2 mt-2 text-base font-normal bg-transparent rounded-lg md:mt-0 hover:text-[#ffb700]" href="#">Lae Lar (Age 10-13)</a>
+            <a class="block px-4 py-2 mt-2 text-base font-normal bg-transparent rounded-lg md:mt-0 hover:text-[#ffb700]" href="#">Phan Tee (Age 14-16)</a>
           </div>
         </div>
       </div>    
-      <a class="px-3 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">About</a>
-      <a class="px-3 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Insights</a>
-      <a class="px-3 py-2 mt-2 text-base font-normal bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-2 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">News</a>
-      <a class="px-4 py-2 mt-2 text-base font-medium text-gray-900 bg-[#ffb700] rounded-full dark-mode:bg-gray-700 dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline md:ml-6 md:mr-6" href="#">Support Us</a>
+      <a class="px-3 py-2 mt-2 text-base bg-transparent rounded-lg md:mt-0 md:ml-2 text-white font-normal hover:text-[#ffb700]" href="#">About</a>
+      <a class="px-3 py-2 mt-2 text-base bg-transparent rounded-lg md:mt-0 md:ml-2 text-white font-normal hover:text-[#ffb700]" href="#">Insights</a>
+      <a class="px-3 py-2 mt-2 text-base bg-transparent rounded-lg md:mt-0 md:ml-2 text-white font-normal hover:text-[#ffb700]" href="#">News</a>
+      <a class="px-4 py-2 mt-2 text-base font-medium text-gray-900 bg-[#ffb700] rounded-full md:mt-0 md:ml-6 md:mr-6" href="#">Support Us</a>
     </nav>
   </div>
 </section>
@@ -51,7 +51,7 @@
 <section class="w-full text-white bg-[#57475b]">
     <div class="flex flex-row max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-28">
         <div class="flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-start">
-           <h2 class="flex justify-center mt-10 md:mt-0 md:justify-start md:text-3xl text-[1.65rem] md:w-[28rem] font-semibold pb-8 text-[#ffb700] leading-11 header" style="line-height: 3rem;">Computer Science & Artificial Intelligence for Every Kid in Myanmar</h2>
+           <h2 class="flex justify-center mt-24 md:mt-0 md:justify-start md:text-3xl text-[1.65rem] md:w-[28rem] font-semibold pb-8 text-[#ffb700] leading-11 header" style="line-height: 3rem;">Computer Science & Artificial Intelligence for Every Kid in Myanmar</h2>
            <p class="flex justify-center md:text-[1.1rem] text-[1rem] mb-12 md:mb-0 md:justify-start text-base md:w-[28rem] font-normal leading-8 intro md:pr-16">
              We're a non-profit social enterprise based
              in Myanmar, introducing Computer Science
@@ -264,7 +264,7 @@
         <div class="w-full flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
             <div class="card bg-white md:mr-8 overflow-hidden">
                 <img class="h-56 hover:scale-140" style="border-radius: 1.8% 1.8% 0 0" src="../images/nature.jfif" alt="">
-                <div class="card-body overflow-hidden z-[1] bg-white">
+                <div class="card-body overflow-hidden bg-white">
                    <p class="text-sm font-normal">21 January 2022</p>
                    <h3 class="text-lg font-semibold pt-3 pb-5">Announcing official <br>Thate Pan Hub Partner</h3>
                    <a class="text-base text-[#ffb700] font-medium" href="#">Read More</a>
@@ -272,7 +272,7 @@
             </div>
             <div class="card bg-white my-12 md:my-0 md:mr-8 overflow-hidden">
                 <img class="h-56 hover:scale-140" style="border-radius: 1.8% 1.8% 0 0" src="../images/nature.jfif" alt="">
-                <div class="card-body overflow-hidden z-[1] bg-white">
+                <div class="card-body overflow-hidden bg-white">
                    <p class="text-sm font-normal">21 January 2022</p>
                    <h3 class="text-lg font-semibold pt-3 pb-5">Announcing official <br>Thate Pan Hub Partner</h3>
                    <a class="text-base text-[#ffb700] font-medium" href="#">Read More</a>
@@ -347,7 +347,7 @@
 </section>
 
 <section class="w-full text-white bg-[#57475b] pt-10 md:pt-20">
-    <footer class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-28 pb-16">
+    <footer class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-28 pb-16 pt-6 md:pt-0">
         <div class="w-full flex flex-col md:flex-row md:justify-start text-center lg:text-left">
             <div class="mb-6 md:mb-0">
                 <h4 class="text-xl font-medium py-7">Contact Us</h4>
@@ -358,13 +358,13 @@
             </div>
             <div class="w-full flex flex-col md:flex-row md:justify-end">
                 <div class="mb-6 md:mb-0">
-                    <h4 class="text-xl font-medium py-7">Follow Us</h4>
-                    <div class="flex flex-row justify-center md:justify-end mb-4 leading-10 items-center">
+                    <h4 class="text-xl font-medium pt-7 pb-10">Follow Us</h4>
+                    <div class="flex flex-row justify-center md:justify-end mb-4 leading-10 items-center px-4 md:px-0">
                         <a class="mr-4" href="#"><img src="../images/facebook.svg"></a>
                         <a class="mr-4" href="#"><img src="../images/twitter.svg"></a>
                         <a class="mr-4" href="#"><img src="../images/instagram.svg"></a>
                         <a class="mr-4" href="#"><img src="../images/linkedin.svg"></a>
-                        <a class="mr-4" href="#"><img src="../images/youtube.svg"></a>
+                        <a class="md:mr-4" href="#"><img src="../images/youtube.svg"></a>
                     </div>
                 </div>
             </div>
