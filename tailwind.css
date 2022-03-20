@@ -18,6 +18,43 @@
          hover:text-[#57475b] rounded-full md:mt-0
          md:ml-6 md:mr-6 mb-12 md:mb-0
     }
+
+    .navbar {
+        @apply flex-col grow pb-4 md:pb-0 left-0 
+        md:flex md:justify-end md:flex-row md:z-[1]
+    }
+
+    .nav-link {
+        @apply px-3 py-2 mt-2 text-base bg-transparent
+        rounded-lg md:mt-0 md:ml-2 text-white font-normal
+    }
+
+    .nav-button {
+        @apply px-4 py-2 mt-2 text-base font-medium text-gray-900
+        bg-[#ffb700] rounded-full md:mt-0 md:ml-6 md:mr-6
+    }
+
+    .dropdown-button{
+        @apply flex flex-row items-center w-full px-3 py-2 mt-2
+        text-base font-normal text-left bg-transparent
+        rounded-lg md:w-auto md:inline md:mt-0 md:ml-2
+        text-white font-normal hover:text-[#ffb700]
+    }
+
+    .dropdown {
+        @apply absolute right-0 w-full mt-2 origin-top-right
+        rounded-md shadow-lg md:w-52
+    }
+
+    .dlink-group{
+        @apply py-2 bg-white rounded-md shadow 
+        text-[#57475b] font-normal border-line
+    }
+
+    .dropdown-link {
+        @apply block px-4 py-2 mt-2 text-base font-normal md:mt-0 
+        bg-transparent rounded-lg hover:text-[#ffb700]
+    }
     
 }
 
@@ -58,6 +95,13 @@
     .border-3{
         border-width: 3px;
     }
+    .banner-lg{
+        transform: rotate(215deg) scale(.85);
+    }
+    .banner-lg:hover{
+        transform: rotate(35deg) scale(.85);
+        transition: all 0.2s ease;
+    }
     .sm-one{
         transform: rotate(215deg) scale(.7);
     }
@@ -73,17 +117,17 @@
         transition: all 0.2s ease;
     }
     .sm-two{
-        transform: rotate(215deg) scale(.7);
+        transform: rotate(130deg) scale(.7);
     }
     .sm-two:hover{
-        transform: rotate(345deg) scale(.7);
+        transform: rotate(310deg) scale(.7);
         transition: all 0.2s ease;
     }
     .lg-two{
-        transform: rotate(215deg) scale(1.25);
+        transform: rotate(130deg) scale(1.25);
     }
     .lg-two:hover{
-        transform: rotate(345deg) scale(1.25);
+        transform: rotate(310deg) scale(1.25);
         transition: all 0.2s ease;
     }
     .sm-three{
@@ -119,6 +163,6 @@
          top: 0;
          right: 0;
          left: 0;
-         z-index: 1;
+         z-index: 2;
      }
 }
