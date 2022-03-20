@@ -26,7 +26,7 @@
       </button>
     </div>
     <nav :class="{'flex': open, 'hidden': !open}" class="navbar md:flex">
-        <a class="nav-link text-[#57475b] hover:text-[#ffb700]" href="#">Home</a>
+        <a class="nav-link text-[#57475b] hover:text-[#ffb700]" href="index.html">Home</a>
       <div @click.away="open = false" class="relative" x-data="{ open: false }">
         <button @click="open = !open" class="dropdown-button text-[#ffb700] font-medium">
           <span>Courses</span>
@@ -40,7 +40,7 @@
           </div>
         </div>
       </div>    
-      <a class="nav-link text-[#57475b] hover:text-[#ffb700]" href="#">About</a>
+      <a class="nav-link text-[#57475b] hover:text-[#ffb700]" href="about.html">About</a>
       <a class="nav-link text-[#57475b] hover:text-[#ffb700]" href="#">Insights</a>
       <a class="nav-link text-[#57475b] hover:text-[#ffb700]" href="#">News</a>
       <a class="nav-button bg-[#57475b] text-white" href="#">Support Us</a>
@@ -51,9 +51,9 @@
 <section class="w-full bg-white text-[#57475b]">
     <div class="flex flex-row max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-28">
         <div class="flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-start md:pr-12">
-           <h1 class="flex justify-center mt-24 md:mt-0 md:justify-start md:text-5xl text-[1.65rem] md:w-[28rem] font-semibold pb-8 text-[#ffb700] header" style="line-height: 1rem;">Suu Sann</h1>
-           <h2 class="flex justify-center md:text-[1.4rem] text-[1.3rem] text-[#7DCDC7] mb-12 md:mb-0 md:justify-start text-base md:w-[28rem] font-semibold leading-8 intro md:pr-16 md:mb-6">Age 7 - 9</h2>
-           <h2 class="flex justify-center md:text-[1.1rem] text-[1rem] mb-12 md:mb-0 md:justify-start text-base md:w-[28rem] font-semibold leading-8 intro md:pr-16 md:mb-4">About this Course</h2>
+           <h1 class="flex justify-center py-4 md:pt-0 mt-24 md:mt-0 md:justify-start md:text-5xl text-[1.65rem] md:w-[28rem] font-semibold md:pb-8 text-[#ffb700] header" style="line-height: 1rem;">Suu Sann</h1>
+           <h2 class="flex justify-center md:text-[1.4rem] text-[1.3rem] text-[#7DCDC7] md:mb-12 md:mb-0 md:justify-start text-base md:w-[28rem] font-semibold leading-8 intro md:pr-16 md:mb-6">Age 7 - 9</h2>
+           <h2 class="flex justify-center py-4 md:py-0 md:text-[1.1rem] text-[1rem] md:mb-12 md:mb-0 md:justify-start text-base md:w-[28rem] font-semibold leading-8 intro md:pr-16 md:mb-4">About this Course</h2>
            <p class="flex justify-center md:text-[1rem] text-[0.9rem] mb-12 md:mb-0 md:justify-start text-base md:w-[28rem] font-normal leading-8 intro">
             These littel explorers tend to have complex ideas and don't
             hesitate to ask questions to figure out how things work. Our
@@ -62,13 +62,93 @@
             endless possibilities. The lessons also teach them to 
             meaningfully collaborate with others and face challenging
             tasks with different problem-solving techniques & critical 
-            thinkg.</p>
+            thinking.</p>
         </div>
         <div class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
             <div class="flex justify-center items-center relative">
                 <img class="absolute scale-110" src="../images/Suu Sann.svg" alt="">
                 <img class="banner-lg" src="../images/suusann.png" alt="">
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="w-full bg-[#57475b] text-white pb-20">
+    <h1 class="text-center text-2xl md:text-3xl font-semibold pb-8 pt-20">What you will learn from this course</h1>
+    <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-56">
+        <div class="course-card bg-[#E88868]">
+            <div class="hidden md:flex side-item">
+                <h3 class="text-lg font-normal mb-6">LEVEL</h3>
+                <h5 class="text-5xl font-semibold">1</h5>
+            </div>
+            <div class="flex-col w-full md:w-[80%] course-content">
+                <div class="w-full flex flex-row justify-between mb-4">
+                    <h3 class="text-xl font-semibold">Basic Coding for Kids 1</h3>
+                    <h5 class="text-base font-normal">23 hours</h5>
+                </div>
+                <p class="text-base font-normal">
+                    This course is an introductory computer science and
+                    programming basic course. Students will develop their
+                    understanding of the basic concepts such as sequencing,
+                    programming, loops, and events with helpful videos and
+                    puzzles using Code.org.
+                </p>
+            </div>
+        </div>
+        <div class="course-card bg-[#DCBAD8]">
+          <div class="hidden md:flex side-item">
+              <h3 class="text-lg font-normal mb-6">LEVEL</h3>
+              <h5 class="text-5xl font-semibold">2</h5>
+          </div>
+          <div class="flex-col w-full md:w-[80%] course-content">
+              <div class="w-full flex flex-row justify-between mb-4">
+                  <h3 class="text-xl font-semibold">Basic Coding for Kids 2</h3>
+                  <h5 class="text-base font-normal">21 hours</h5>
+              </div>
+              <p class="text-base font-normal">
+                This course will further develop students' ideas of block
+                programming and digital literacy. By the end of the course,
+                students will know problem-solving methods and be able
+                to create interactive projects that they can.
+              </p>
+          </div>
+        </div>
+      <div class="course-card bg-[#7DCDC7]">
+        <div class="hidden md:flex side-item py-16">
+            <h3 class="text-lg font-normal mb-6">LEVEL</h3>
+            <h5 class="text-5xl font-semibold">3</h5>
+        </div>
+        <div class="flex-col w-full md:w-[80%] course-content">
+            <div class="w-full flex flex-row justify-between mb-4">
+                <h3 class="text-xl font-semibold">Hello AI</h3>
+                <h5 class="text-base font-normal">17 hours</h5>
+            </div>
+            <p class="text-base font-normal mb-4">
+                In this course, the concepts of AI such as AI Fundamentals,
+                Supervised Learning, Unsupervised Learning, Reinforcement
+                Learning, Understanding and Generating Language, and AI 
+                Ethics are introduced.  
+            </p>
+            <p class="text-base font-normal w-full">
+              Students will be able to
+              <div class="w-full">
+                <p>1. Understand the basic concepts of Artificial Intelligence</p> 
+                <p>2. Know the applications of AI</p>
+                <p>3. Explain AI to other people</p>
+              </div>
+            </p>
+        </div>
+      </div>     
+    </div>
+</section>
+
+<section class="w-full bg-white py-20">
+    <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-56">
+        <div class="course-card mt-0 text-[#57475b] font-medium leading-8" style="box-shadow: 0px 0px 8px gray;">
+          This course will further develop students' ideas of block programming
+          and digital literacy. By the end of the course, students will know 
+          problem-solving methods and be able to create interactive projects
+          that they can share.
         </div>
     </div>
 </section>
