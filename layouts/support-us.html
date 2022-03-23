@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Thate Pan Hub | Support Us</title>
+    <link rel="icon" href="../images/tph-favicon.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  </head>
+  <body>
+
+    <section class="w-full text-[#57475b] bg-white mobile-nav">
+      <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-16">
+        <div class="p-4 flex flex-row items-center justify-between">
+          <a href="index.html" class="tracking-widest">
+              <img class="w-28 md:w-36" src="../images/TPHlogo.svg" alt="Brand Logo">
+          </a>
+          <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+            <svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8">
+              <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <nav :class="{'flex': open, 'hidden': !open}" class="navbar md:flex">
+            <a class="nav-link text-[#57475b] hover:text-[#ffb700]" href="index.html">Home</a>
+          <div @click.away="open = false" class="relative" x-data="{ open: false }">
+            <button @click="open = !open" class="dropdown-button text-[#57475b] hover:text-[#ffb700]">
+              <span>Courses</span>
+              <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-4 h-4 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+            <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="dropdown">
+              <div class="dlink-group">
+                <a class="dropdown-link" href="suu-sann.html">Suu Sann (Age 7-9)</a>
+                <a class="dropdown-link" href="#">Lae Lar (Age 10-13)</a>
+                <a class="dropdown-link" href="#">Phan Tee (Age 14-16)</a>
+              </div>
+            </div>
+          </div>    
+          <a class="nav-link text-[#57475b] hover:text-[#ffb700]" href="about.html">About</a>
+          <a class="nav-link text-[#57475b] hover:text-[#ffb700]" href="article.html">Insights</a>
+          <a class="nav-link text-[#ffb700] font-medium" href="news.html">News</a>
+          <a class="nav-button bg-[#57475b] text-white" href="#">Support Us</a>
+        </nav>
+      </div>
+    </section>
+    
+    <div class="py-8 px-8 md:py-20 md:px-44 flex items-center gap-20 mt-24 md:mt-0">
+      <div class="w-full md:w-1/2 h-full">
+        <h2 class="text-2xl font-bold" style="color: #fcb615">Giving</h2>
+        <p class="mt-4 text-md">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore at
+          tenetur eius iste repudiandae accusamus provvident ipsum id magnam enim
+          beatae voluptas consequatur, omnis animi repellat, porro ea. Odio,
+          minus! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Distinctio possimus accusantium nulla harum voluptatem? Ratione vel,
+          nihil doloremque dolore hic qui, mollitia expedita, ab sequi rerum
+          aspernatur culpa esse sunt!
+        </p>
+      </div>
+      <div class="hidden md:flex w-1/2 h-72 bg-gray-200"></div>
+    </div>
+
+    <div class="py-8 px-8 md:py-20 md:px-44 flex items-center gap-20">
+      <div class="hidden md:flex w-1/2 h-72 bg-gray-200"></div>
+      <div class="w-full md:w-1/2 h-full">
+        <div class="flex flex-col gap-6">
+          <div class="flex gap-8">
+            <div class="w-28 h-16 bg-gray-200"></div>
+            <div class="flex flex-col gap-2">
+              <p class="font-xs text-gray-400 font-normal">Name</p>
+              <p class="font-md text-black font-semibold">
+                0000 - 0000 - 0000 - 0000
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-8">
+            <div class="w-28 h-16 bg-gray-200"></div>
+            <div class="flex flex-col gap-2">
+              <p class="font-xs text-gray-400 font-normal">Name</p>
+              <p class="font-md text-black font-semibold">
+                0000 - 0000 - 0000 - 0000
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-8">
+            <div class="w-28 h-16 bg-gray-200"></div>
+            <div class="flex flex-col gap-2">
+              <p class="font-xs text-gray-400 font-normal">Name</p>
+              <p class="font-md text-black font-semibold">
+                0000 - 0000 - 0000 - 0000
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-8">
+            <div class="w-28 h-16 bg-gray-200"></div>
+            <div class="flex flex-col gap-2">
+              <p class="font-xs text-gray-400 font-normal">Name</p>
+              <p class="font-md text-black font-semibold">
+                0000 - 0000 - 0000 - 0000
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-8 px-8 md:py-20 md:px-44">
+      <h2 class="text-2xl font-bold">Donor List</h2>
+      <div class="mt-8 w-full h-96 bg-gray-200"></div>
+    </div>
+
+    <section class="w-full text-white bg-[#57475b] pt-10 md:pt-20">
+      <footer class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-28 pb-16 pt-6 md:pt-0">
+          <div class="w-full flex flex-col md:flex-row md:justify-start text-center lg:text-left">
+              <div class="mb-6 md:mb-0">
+                  <h4 class="text-xl font-medium py-7">Contact Us</h4>
+                  <div class="flex flex-col md:justify-start mb-4 leading-10">
+                      <a class="font-normal" href="tel:099970764070">(+95)9970764070</a>
+                      <a class="font-normal" href="mailto:hello@thatepanhub.com">hello@thatepanhub.com</a>
+                  </div>
+              </div>
+              <div class="w-full flex flex-col md:flex-row md:justify-end">
+                  <div class="mb-6 md:mb-0">
+                      <h4 class="text-xl font-medium pt-7 pb-10">Follow Us</h4>
+                      <div class="flex flex-row justify-center md:justify-end mb-4 leading-10 items-center px-4 md:px-0">
+                          <a class="mr-4" href="#"><img src="../images/facebook.svg"></a>
+                          <a class="mr-4" href="#"><img src="../images/twitter.svg"></a>
+                          <a class="mr-4" href="#"><img src="../images/instagram.svg"></a>
+                          <a class="mr-4" href="#"><img src="../images/linkedin.svg"></a>
+                          <a class="md:mr-4" href="#"><img src="../images/youtube.svg"></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      <hr class="border-[#9b9b9b]"/>
+      <div class="text-center p-4 text-[#9b9b9b]">
+          Copyright &copy; 2022 THATE PAN HUB
+      </div>
+  </section>
+  </body>
+</html>
