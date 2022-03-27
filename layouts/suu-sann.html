@@ -6,10 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thate Pan Hub | Suu Sann</title>
     <link rel="icon" href="../images/tph-favicon.png">
+    <link rel="stylesheet" href="/owl_carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/owl_carousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
+<style>
+  .owl-stage-outer {
+        padding: 1rem 0 1rem 0;
+    }
+    .owl-theme .owl-nav {
+    margin-top: 4rem;
+    }
+    .owl-nav {
+        font-size: 61px;
+        position: absolute;
+        top: 6rem!important;
+    }
+    .owl-prev {
+        margin-left: -2.4rem!important;
+    }
+    .owl-next {
+        margin-left: 54rem!important;
+    }
+</style>
 <body>
     
 <section class="w-full text-[#57475b] bg-white mobile-nav">
@@ -143,13 +165,46 @@
 </section>
 
 <section class="w-full bg-white py-20">
-    <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-56">
-        <div class="course-card mt-0 text-[#57475b] font-medium leading-8" style="box-shadow: 0px 0px 8px gray;">
-          This course will further develop students' ideas of block programming
+    <div class="owl-carousel owl-theme flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-56">
+        <div class="course-card mt-0 text-[#57475b] flex flex-col font-medium leading-8" style="box-shadow: 0px 0px 8px gray;">
+            <p class="px-14">This course will further develop students' ideas of block programming
+            and digital literacy. By the end of the course, students will know 
+            problem-solving methods and be able to create interactive projects
+            that they can share.</p>
+          <div class="flex flex-row justify-center items-center mt-8">
+              <img src="../images/profile.svg" class="mr-4"  alt="" style="width: 30%!important">
+              <div class="w-full flex flex-col justify-center items-center">
+                 <h3 class="text-base font-medium pt-1 leading-5">Name</h3>
+                 <h4 class="text-base font-light leading-9">Brother of Student</h4>
+              </div>
+            </div>
+        </div>
+        <div class="course-card mt-0 text-[#57475b] flex flex-col font-medium leading-8" style="box-shadow: 0px 0px 8px gray;">
+          <p class="px-14">This course will further develop students' ideas of block programming
           and digital literacy. By the end of the course, students will know 
           problem-solving methods and be able to create interactive projects
-          that they can share.
+          that they can share.</p>
+        <div class="flex flex-row justify-center items-center mt-8">
+            <img src="../images/profile.svg" class="mr-4"  alt="" style="width: 30%!important">
+            <div class="w-full flex flex-col justify-center items-center">
+               <h3 class="text-base font-medium pt-1 leading-5">Name</h3>
+               <h4 class="text-base font-light leading-9">Brother of Student</h4>
+            </div>
+          </div>
+      </div>
+      <div class="course-card mt-0 text-[#57475b] flex flex-col font-medium leading-8" style="box-shadow: 0px 0px 8px gray;">
+        <p class="px-14">This course will further develop students' ideas of block programming
+        and digital literacy. By the end of the course, students will know 
+        problem-solving methods and be able to create interactive projects
+        that they can share.</p>
+      <div class="flex flex-row justify-center items-center mt-8">
+          <img src="../images/profile.svg" class="mr-4"  alt="" style="width: 30%!important">
+          <div class="w-full flex flex-col justify-center items-center">
+             <h3 class="text-base font-medium pt-1 leading-5">Name</h3>
+             <h4 class="text-base font-light leading-9">Brother of Student</h4>
+          </div>
         </div>
+    </div>
     </div>
 </section>
 
@@ -183,7 +238,30 @@
     </div>
 </section>
 
-<script src="./js/typewriter.js"></script>
-
+<!-- <script src="./js/typewriter.js"></script> -->
+<script src="/owl_carousel/dist/owl.carousel.min.js"></script>
+<!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
+<script>
+  $('.owl-carousel').owlCarousel({
+    autoplay: true,
+    autoplayhoverpause: true,
+    autoplaytimeout: 1000,
+    rtl: false,
+    loop: true,
+    // margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items: 1
+        }
+    }
+})
+</script>
 </body>
 </html>

@@ -69,7 +69,18 @@
         @apply flex flex-row md:flex-col w-[80%] justify-center
         items-center md:justify-end
     }
-    
+    .owl-stage-outer {
+        @apply owl-card
+    }
+    .owl-nav {
+        @apply owl-slider
+    }
+    .owl-prev {
+        @apply owl-left
+    }
+    .owl-next {
+        @apply owl-right
+    }
 }
 
 @layer utilities {
@@ -157,6 +168,20 @@
     .lg-three:hover{
         transform: rotate(135deg) scale(1.25);
         transition: all 0.2s ease;
+    }
+    .owl-card {
+        padding: 1rem 0 1rem 0;
+    }
+    .owl-slider {
+        font-size: 61px;
+        position: absolute;
+        top: 3rem;
+    }
+    .owl-left {
+        margin-left: -2.4rem;
+    }
+    .owl-right {
+        margin-left: 54rem;
     }
 }
 
