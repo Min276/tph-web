@@ -178,13 +178,13 @@
 
 <section class="w-full bg-white py-20 relative">
     <!-- <img class="absolute custom-prev" src="../images/Group 922.svg" alt=""> -->
-    <div class="owl-carousel owl-theme flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-56">
+    <div id="full-slider" class="owl-carousel owl-theme flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-56">
         <div class="course-card py-8 md:p-12 md:mt-8 text-[#57475b] flex flex-col font-medium leading-8" style="box-shadow: 0px 0px 8px gray;">
             <p class="px-14">This course will further develop students' ideas of block programming
             and digital literacy. By the end of the course, students will know 
             problem-solving methods and be able to create interactive projects
             that they can share.</p>
-            <div class="flex flex-row justify-center items-center mt-8">
+            <div class="flex flex-row justify-center items-center px-14 md:px-0 mt-8">
               <img src="../images/profile.svg" class="mr-6"  alt="" style="width: 30%!important">
               <div class="w-full flex flex-col justify-center">
                  <h3 class="text-base font-medium pt-1 leading-5">Name</h3>
@@ -197,7 +197,7 @@
           and digital literacy. By the end of the course, students will know 
           problem-solving methods and be able to create interactive projects
           that they can share.</p>
-        <div class="flex flex-row justify-center items-center mt-8">
+        <div class="flex flex-row justify-center items-center px-14 md:px-0 mt-8">
             <img src="../images/profile.svg" class="mr-6"  alt="" style="width: 30%!important">
             <div class="w-full flex flex-col justify-center">
                <h3 class="text-base font-medium pt-1 leading-5">Name</h3>
@@ -210,7 +210,7 @@
         and digital literacy. By the end of the course, students will know 
         problem-solving methods and be able to create interactive projects
         that they can share.</p>
-      <div class="flex flex-row justify-center items-center mt-8">
+      <div class="flex flex-row justify-center items-center px-14 md:px-0 mt-8">
           <img src="../images/profile.svg" class="mr-6"  alt="" style="width: 30%!important">
           <div class="w-full flex flex-col justify-center">
              <h3 class="text-base font-medium pt-1 leading-5">Name</h3>
@@ -223,7 +223,7 @@
         and digital literacy. By the end of the course, students will know 
         problem-solving methods and be able to create interactive projects
         that they can share.</p>
-        <div class="flex flex-row justify-center items-center mt-8">
+        <div class="flex flex-row justify-center items-center px-14 md:px-0 mt-8">
           <img src="../images/profile.svg" class="mr-6"  alt="" style="width: 30%!important">
           <div class="w-full flex flex-col justify-center">
              <h3 class="text-base font-medium pt-1 leading-5">Name</h3>
@@ -236,7 +236,7 @@
       and digital literacy. By the end of the course, students will know 
       problem-solving methods and be able to create interactive projects
       that they can share.</p>
-      <div class="flex flex-row justify-center items-center mt-8">
+      <div class="flex flex-row justify-center items-center px-14 md:px-0 mt-8">
         <img src="../images/profile.svg" class="mr-6"  alt="" style="width: 30%!important">
         <div class="w-full flex flex-col justify-center">
            <h3 class="text-base font-medium pt-1 leading-5">Name</h3>
@@ -278,30 +278,7 @@
     </div>
 </section>
 
-<!-- <script src="./js/typewriter.js"></script> -->
 <script src="../owl_carousel/dist/owl.carousel.min.js"></script>
-<!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
-<script>
-  $('.owl-carousel').owlCarousel({
-    autoplay: true,
-    autoplayhoverpause: true,
-    autoplaytimeout: 1000,
-    rtl: false,
-    loop: true,
-    // margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items: 1
-        }
-    }
-})
-</script>
+<script src="./js/carousel-control.js"></script>
 </body>
 </html>

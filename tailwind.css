@@ -72,9 +72,9 @@
     .owl-stage-outer {
         @apply owl-card
     }
-    /* .owl-nav {
-        @apply owl-slider hidden
-    } */
+    .owl-nav {
+        @apply owl-slider hidden md:inline-block
+    }
 }
 
 @layer utilities {

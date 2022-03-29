@@ -13,6 +13,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
+<style>
+    .owl-carousel .owl-item {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .owl-nav {
+        display: none;
+    }
+</style>
 <body>
     
 <section class="w-full text-white bg-[#57475b] mobile-nav">
@@ -123,32 +132,36 @@
 </section>
 
 <section class="w-full text-white bg-[#E88868]">
-    <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-28 pb-16">
-        <h1 class="text-center text-3xl font-semibold pt-20 pb-8">What We Do</h1>
+    <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-28 pb-24">
+        <h1 class="text-center text-3xl font-semibold pt-24 pb-4">What We Do</h1>
         <div class="flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
-            <div class="w-full text-white rounded-md text-center md:h-[240px]">
-                <h3 class="text-2xl font-semibold my-5">Educate</h3>
+            <div class="w-full text-white rounded-md text-center">
+                <img class="scale-[0.2] mb-[-21%] md:mb-0 md:scale-[0.42]" src="../images/educate.svg" alt="">
+                <h3 class="text-2xl font-semibold mb-5 md:mt-[-1.2rem]">Educate</h3>
                 <p>We educate leaders of tomorrow by providing a strong, foundational Computer Science education vital to succeed in today's technological era.</p>
             </div>
-            <div class="w-full text-white rounded-md my-8 md:my-0 md:mx-12 text-center md:h-[240px]">
-                <h3 class="text-2xl font-semibold my-5">Advocate</h3>
+            <div class="w-full text-white rounded-md mt-[-3rem] md:mx-12 text-center">
+                <img class="scale-[0.2] mb-[-38%] md:mb-0 md:scale-[0.36]" src="../images/Advocate.png" alt="">
+                <h3 class="text-2xl font-semibold mb-5  md:mt-[-3.5rem]">Advocate</h3>
                 <p>We advocate for Computer Science to become a core subject in Myanmar and for it to become more widespread and accessible nationwide.</p>
             </div>
-            <div class="w-full text-white rounded-md mb-8 md:my-0 md:mr-12 text-center md:h-[240px]">
-                <h3 class="text-2xl font-semibold my-5">Empower</h3>
+            <div class="w-full text-white rounded-md mt-[-1.5rem] md:mr-12 text-center">
+                <img class="scale-[0.2] mb-[-38%] md:mb-0 md:scale-[0.36]" src="../images/Empower.png" alt="">
+                <h3 class="text-2xl font-semibold mb-5 md:mt-[-3.5rem]">Empower</h3>
                 <p>We empower students to reach their full potential by providing opportunities to grow personally and intellectually through exploration alongside a quality education.</p>
             </div>
-            <div class="w-full text-white rounded-md text-center md:h-[240px]">
-                <h3 class="text-2xl font-semibold my-5">Innovate</h3>
+            <div class="w-full text-white rounded-md text-center mt-[-3rem]">
+                <img class="scale-[0.2] mb-[-38%] md:mb-0 md:scale-[0.36]" src="../images/Innovate.png" alt="">
+                <h3 class="text-2xl font-semibold mb-5 md:mt-[-3.5rem]">Innovate</h3>
                 <p>We innovate, spearheading the spread of free, accessible technological education in Myanmar since the launch of our non-profit social enterprise.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="w-full bg-[#7DCDC7] pt-20 pb-16">
+<section class="relative w-full bg-[#7DCDC7] pt-20 pb-16">
     <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-center md:px-6 md:flex-row lg:px-28">
-        <img class="absolute scale-60 hidden md:block" style="top: 123em; right: 1.5em;" src="../images/circuit2.svg" alt="">
+        <img class="absolute scale-60 hidden md:block" style="top: -3em; right: 1.5em;" src="../images/circuit2.svg" alt="">
         <div class="w-full md:w-1/4 flex flex-col md:justify-center md:items-center">
             <div class="w-full text-white rounded-md">
                 <h3 class="text-2xl font-semibold my-10 leading-10" style="letter-spacing: 0.03rem;">Thate Pan Hub <br> in Numbers</h3>
@@ -181,36 +194,50 @@
                 <h3 class="text-2xl font-semibold my-10 leading-10" style="letter-spacing: 0.03rem;">And <br> Still Counting</h3>
             </div>
         </div>
-        <img class="absolute scale-60 hidden md:block" style="top: 148em; left: 1.5em;" src="../images/circuit.svg" alt="">
+        <img class="absolute scale-60 hidden md:block" style="bottom: -3em; left: 1.5em;" src="../images/circuit.svg" alt="">
     </div>
 </section>
 
-<section class="w-full text-[#57475b] pt-36 pb-16">
+<section class="relative w-full text-[#57475b] pt-36 pb-16">
     <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-28 pb-16">
-        <img class="absolute scale-60 hidden md:block" style="top: 169em; left: 1.5em;" src="../images/Group 913.svg" alt="">
-        <div class="owl-carousel owl-theme flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
+        <img class="absolute scale-60 hidden md:block" style="top: 0em; left: 1.5em;" src="../images/Group 913.svg" alt="">
+        <div id="owl-right-slider" class="owl-carousel owl-theme flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
             <div class="w-full text-[#57475b] rounded-md p-12 flex flex-col justify-center items-center mr-8" style="border: 2.5px solid #ffb700">
-                <img src="../images/profile.svg" alt="">
+                <img src="../images/profile.svg" alt="" style="width: 30%;">
                 <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
                 <h3 class="text-base font-medium pt-1 leading-5 text-center">Name</h3>
                 <h4 class="text-base font-normal leading-9 text-center">Managing Director</h4>
                 <h5 class="text-base font-normal text-center">KST LEGAL</h5>
             </div>
             <div class="w-full text-[#57475b] rounded-md p-12 flex flex-col justify-center items-center" style="border: 2.5px solid #ffb700">
-                <img src="../images/profile.svg" alt="">
+                <img src="../images/profile.svg" alt="" style="width: 30%;">
+                <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
+                <h3 class="text-base font-medium pt-1 leading-5 text-center">Name</h3>
+                <h4 class="text-base font-normal leading-9 text-center">Managing Director</h4>
+                <h5 class="text-base font-normal text-center">KST LEGAL</h5>
+            </div>
+            <div class="w-full text-[#57475b] rounded-md p-12 flex flex-col justify-center items-center mr-8" style="border: 2.5px solid #ffb700">
+                <img src="../images/profile.svg" alt="" style="width: 30%;">
+                <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
+                <h3 class="text-base font-medium pt-1 leading-5 text-center">Name</h3>
+                <h4 class="text-base font-normal leading-9 text-center">Managing Director</h4>
+                <h5 class="text-base font-normal text-center">KST LEGAL</h5>
+            </div>
+            <div class="w-full text-[#57475b] rounded-md p-12 flex flex-col justify-center items-center" style="border: 2.5px solid #ffb700">
+                <img src="../images/profile.svg" alt="" style="width: 30%;">
                 <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
                 <h3 class="text-base font-medium pt-1 leading-5 text-center">Name</h3>
                 <h4 class="text-base font-normal leading-9 text-center">Managing Director</h4>
                 <h5 class="text-base font-normal text-center">KST LEGAL</h5>
             </div>
         </div>
-        <img class="absolute scale-60 hidden md:block" style="top: 210em; right: 1.5em;" src="../images/Group 914.svg" alt="">
+        <img class="absolute scale-60 hidden md:block" style="bottom: 0em; right: 1.5em;" src="../images/Group 914.svg" alt="">
     </div>
 </section>
 
-<section class="w-full text-white pt-20 pb-16">
+<section class="w-full text-white pb-16">
     <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-28 pb-16">
-        <div class="owl-carousel owl-theme flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
+        <div id="owl-left-slider" class="owl-carousel owl-theme flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
             <div class="w-full bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center md:mr-8">
                 <img src="../images/profile.svg" alt="">
                 <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
@@ -273,7 +300,7 @@
                     education in a modern way to all the children from
                     different diversity and backgrounds.
                 </p>
-                <a href="#" class="button text-[#57475b] w-fit m-0" >Learn More &rArr;</a>
+                <a href="#" class="button text-[#57475b] w-fit m-0" >Learn More &rarr;</a>
             </div>
         </div>
     </div>
@@ -283,7 +310,7 @@
     <div class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:px-6 lg:px-28 pb-16">
         <h1 class="text-center text-3xl font-semibold pt-20 pb-16">Latest News</h1>
         <div class="w-full flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
-            <div class="card bg-white md:mr-8 overflow-hidden">
+            <div class="card shadow-none bg-white md:mr-8 overflow-hidden">
                 <img class="h-56 hover:scale-140" style="border-radius: 1.8% 1.8% 0 0" src="../images/nature.jfif" alt="">
                 <div class="card-body overflow-hidden bg-white z-[1]">
                    <p class="text-sm font-normal">21 January 2022</p>
@@ -291,7 +318,7 @@
                    <a class="text-base text-[#ffb700] font-medium" href="four.html">Read More</a>
                 </div>
             </div>
-            <div class="card bg-white my-12 md:my-0 md:mr-8 overflow-hidden">
+            <div class="card shadow-none bg-white my-12 md:my-0 md:mr-8 overflow-hidden">
                 <img class="h-56 hover:scale-140" style="border-radius: 1.8% 1.8% 0 0" src="../images/nature.jfif" alt="">
                 <div class="card-body overflow-hidden bg-white z-[1]">
                    <p class="text-sm font-normal">21 January 2022</p>
@@ -300,7 +327,7 @@
                 </div>
             </div>
             <div class="w-full flex flex-col md:justify-center md:items-center md:w-[32rem]">
-                <div class="card md:flex-row justify-center items-center">
+                <div class="card shadow-none md:flex-row justify-center items-center">
                     <img class="w-[85%] md:w-40 rounded-lg" src="../images/nature.jfif" alt="">
                     <div class="card-body" style="padding: 1rem">
                         <h3>Lorem ipsum dolor, sit amet<br>
@@ -308,7 +335,7 @@
                             ipsum dolor elit.</h3>
                     </div>
                 </div>
-                <div class="card md:flex-row my-8 justify-center items-center">
+                <div class="card shadow-none md:flex-row my-8 justify-center items-center">
                     <img class="w-[85%] md:w-40 rounded-lg" src="../images/nature.jfif" alt="">
                     <div class="card-body"  style="padding: 1rem">
                         <h3>Lorem ipsum dolor, sit amet<br>
@@ -316,7 +343,7 @@
                             ipsum dolor elit.</h3>
                     </div>
                 </div>
-                <div class="card md:flex-row justify-center items-center">
+                <div class="card shadow-none md:flex-row justify-center items-center">
                     <img class="w-[85%] md:w-40 rounded-lg" src="../images/nature.jfif" alt="">
                     <div class="card-body"  style="padding: 1rem">
                         <h3>Lorem ipsum dolor, sit amet<br>
@@ -399,28 +426,6 @@
 
 <script src="./js/typewriter.js"></script>
 <script src="../owl_carousel/dist/owl.carousel.min.js"></script>
-<script>
-     $('.owl-carousel').owlCarousel({
-      autoplay: true,
-      autoplayhoverpause: true,
-      autoplaytimeout: 1000,
-      rtl: false,
-      loop: true,
-      // margin:10,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items: 2
-          },
-          1000:{
-              items: 3
-          }
-      }
-  })
-   
-  </script>
+<script src="./js/carousel-control.js"></script>
 </body>
 </html>

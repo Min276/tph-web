@@ -777,9 +777,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem 0 1rem 0;
 }
 
-/* .owl-nav {
-        @apply owl-slider hidden
-    } */
+.owl-nav{
+  display: none;
+  font-size: 61px;
+  position: absolute;
+  top: 3rem;
+}
+
+@media (min-width: 768px){
+  .owl-nav{
+    display: inline-block;
+  }
+}
 
 .absolute{
   position: absolute;
@@ -826,9 +835,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .my-10{
@@ -851,9 +860,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.25rem;
 }
 
-.my-8{
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .my-12{
@@ -861,9 +870,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3rem;
 }
 
-.my-6{
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .my-2{
@@ -895,6 +904,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .mb-6{
   margin-bottom: 1.5rem;
 }
@@ -923,8 +936,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
+.mb-\[-21\%\]{
+  margin-bottom: -21%;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mt-\[-3rem\]{
+  margin-top: -3rem;
+}
+
+.mb-\[-38\%\]{
+  margin-bottom: -38%;
+}
+
+.mt-\[-1\.5rem\]{
+  margin-top: -1.5rem;
 }
 
 .mr-8{
@@ -937,10 +966,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-10{
   margin-top: 2.5rem;
-}
-
-.mt-0{
-  margin-top: 0px;
 }
 
 .mr-6{
@@ -961,6 +986,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid{
   display: grid;
+}
+
+.contents{
+  display: contents;
 }
 
 .hidden{
@@ -1113,27 +1142,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.scale-\[0\.9\]{
-  --tw-scale-x: 0.9;
-  --tw-scale-y: 0.9;
+.scale-\[0\.95\]{
+  --tw-scale-x: 0.95;
+  --tw-scale-y: 0.95;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.scale-\[1\.2\]{
-  --tw-scale-x: 1.2;
-  --tw-scale-y: 1.2;
+.scale-\[1\.1\]{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.scale-\[1\]{
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
+.scale-\[0\.75\]{
+  --tw-scale-x: 0.75;
+  --tw-scale-y: 0.75;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-90{
   --tw-scale-x: .9;
   --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-\[0\.2\]{
+  --tw-scale-x: 0.2;
+  --tw-scale-y: 0.2;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1326,9 +1361,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3rem;
 }
 
-.py-8{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.px-12{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .py-7{
@@ -1349,6 +1384,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .py-2{
@@ -1376,11 +1416,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 3.5rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .pb-4{
   padding-bottom: 1rem;
 }
@@ -1391,6 +1426,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-16{
   padding-bottom: 4rem;
+}
+
+.pt-12{
+  padding-top: 3rem;
+}
+
+.pt-8{
+  padding-top: 2rem;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
 }
 
 .pt-10{
@@ -1417,6 +1464,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
+.pb-24{
+  padding-bottom: 6rem;
+}
+
+.pt-24{
+  padding-top: 6rem;
+}
+
 .pt-36{
   padding-top: 9rem;
 }
@@ -1439,10 +1494,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-20{
   padding-bottom: 5rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
 }
 
 .text-center{
@@ -1532,6 +1583,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2rem;
 }
 
+.leading-7{
+  line-height: 1.75rem;
+}
+
 .leading-10{
   line-height: 2.5rem;
 }
@@ -1613,6 +1668,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .opacity-40{
   opacity: 0.4;
+}
+
+.shadow-none{
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .transition-transform{
@@ -1915,6 +1976,14 @@ body{
     margin-top: 4rem;
   }
 
+  .md\:mt-\[-1\.2rem\]{
+    margin-top: -1.2rem;
+  }
+
+  .md\:mt-\[-3\.5rem\]{
+    margin-top: -3.5rem;
+  }
+
   .md\:mr-12{
     margin-right: 3rem;
   }
@@ -1945,10 +2014,6 @@ body{
 
   .md\:hidden{
     display: none;
-  }
-
-  .md\:h-\[240px\]{
-    height: 240px;
   }
 
   .md\:h-full{
@@ -1998,6 +2063,18 @@ body{
   .md\:scale-100{
     --tw-scale-x: 1;
     --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:scale-\[0\.42\]{
+    --tw-scale-x: 0.42;
+    --tw-scale-y: 0.42;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:scale-\[0\.36\]{
+    --tw-scale-x: 0.36;
+    --tw-scale-y: 0.36;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -2093,6 +2170,10 @@ body{
 
   .md\:pr-16{
     padding-right: 4rem;
+  }
+
+  .md\:pb-12{
+    padding-bottom: 3rem;
   }
 
   .md\:pt-20{
