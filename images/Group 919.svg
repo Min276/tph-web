@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+  <g id="Group_919" data-name="Group 919" transform="translate(-220 -912)">
+    <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(220 912)" fill="#fff" stroke="#7b5180" stroke-width="1">
+      <circle cx="26" cy="26" r="26" stroke="none"/>
+      <circle cx="26" cy="26" r="25.5" fill="none"/>
+    </g>
+    <path id="Icon_metro-mobile" data-name="Icon metro-mobile" d="M22.4,1.928H8.024a1.6,1.6,0,0,0-1.6,1.6V25.886a1.6,1.6,0,0,0,1.6,1.6H22.4a1.6,1.6,0,0,0,1.6-1.6V3.525A1.6,1.6,0,0,0,22.4,1.928Zm-7.187,24.4a1.242,1.242,0,1,1,1.242-1.242A1.242,1.242,0,0,1,15.211,26.33ZM22.4,22.692H8.024V5.122H22.4Z" transform="translate(230.789 923.294)" fill="#75577e"/>
+  </g>
+</svg>
