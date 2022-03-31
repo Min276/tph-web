@@ -1,0 +1,12 @@
+<svg id="Circuit_Primary-7" data-name="Circuit Primary-7" xmlns="http://www.w3.org/2000/svg" width="577.5" height="195" viewBox="0 0 577.5 195">
+  <g id="Group_1170" data-name="Group 1170" transform="translate(0 0)">
+    <path id="Path_2577" data-name="Path 2577" d="M75,165H-15" transform="translate(502.5 -67.5)" fill="none" stroke="#e88868" stroke-width="5"/>
+    <path id="Path_2578" data-name="Path 2578" d="M82.5,165a7.5,7.5,0,1,1-7.5-7.5,7.5,7.5,0,0,1,7.5,7.5Z" transform="translate(412.5 -67.5)" fill="#e88868"/>
+    <path id="Path_2579" data-name="Path 2579" d="M225,135l-30,30H165m-90,0L45,135H-15m120,30L75,135m300,0H135l-30,30H45" transform="translate(202.5 -67.5)" fill="none" stroke="#7dcdc7" stroke-width="5"/>
+    <path id="Path_2580" data-name="Path 2580" d="M262.5,165a7.5,7.5,0,1,1-7.5-7.5A7.5,7.5,0,0,1,262.5,165Zm120,0a7.5,7.5,0,1,1-7.5-7.5,7.5,7.5,0,0,1,7.5,7.5Zm-180-30a7.5,7.5,0,1,1-7.5-7.5,7.5,7.5,0,0,1,7.5,7.5Zm90,0a7.5,7.5,0,1,1-7.5-7.5,7.5,7.5,0,0,1,7.5,7.5Z" transform="translate(-7.5 -67.5)" fill="#7dcdc7"/>
+    <path id="Path_2581" data-name="Path 2581" d="M195,195l-30-30M45,195,15,225m60-30L45,225,15,255H-15m330-60H15" transform="translate(262.5 -67.5)" fill="none" stroke="#e88868" stroke-width="5"/>
+    <path id="Path_2582" data-name="Path 2582" d="M172.5,195a7.5,7.5,0,1,1-7.5-7.5,7.5,7.5,0,0,1,7.5,7.5Zm150-30a7.5,7.5,0,1,1-7.5-7.5,7.5,7.5,0,0,1,7.5,7.5Zm-150,60a7.5,7.5,0,1,1-7.5-7.5A7.5,7.5,0,0,1,172.5,225Zm-30,30a7.5,7.5,0,1,1-7.5-7.5A7.5,7.5,0,0,1,142.5,255Z" transform="translate(112.5 -67.5)" fill="#e88868"/>
+    <path id="Path_2583" data-name="Path 2583" d="M465,105,435,75H345M165,105,135,75H105m30,30-30,30H75m450-30L495,75H465M255,105,225,75H165m390,30H75L45,75H-15" transform="translate(22.5 -67.5)" fill="none" stroke="#e88868" stroke-width="5"/>
+    <path id="Path_2584" data-name="Path 2584" d="M82.5,75A7.5,7.5,0,1,1,75,67.5,7.5,7.5,0,0,1,82.5,75Zm360,0a7.5,7.5,0,1,1-7.5-7.5,7.5,7.5,0,0,1,7.5,7.5Zm-240,0a7.5,7.5,0,1,1-7.5-7.5A7.5,7.5,0,0,1,202.5,75Zm-30,60a7.5,7.5,0,1,1-7.5-7.5,7.5,7.5,0,0,1,7.5,7.5Zm390-60a7.5,7.5,0,1,1-7.5-7.5,7.5,7.5,0,0,1,7.5,7.5Zm-300,0a7.5,7.5,0,1,1-7.5-7.5A7.5,7.5,0,0,1,262.5,75Z" transform="translate(-67.5 -67.5)" fill="#e88868"/>
+  </g>
+</svg>

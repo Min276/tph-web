@@ -1,0 +1,12 @@
+<svg id="Circuit_Primary-4" data-name="Circuit Primary-4" xmlns="http://www.w3.org/2000/svg" width="247.5" height="165" viewBox="0 0 247.5 165">
+  <g id="Group_1272" data-name="Group 1272" transform="translate(0 0)">
+    <path id="Path_2777" data-name="Path 2777" d="M105,135,75,105H15m0,30-30,30m240-60H135l-30,30H-15" transform="translate(22.5 -37.5)" fill="none" stroke="#e88868" stroke-width="5"/>
+    <path id="Path_2778" data-name="Path 2778" d="M202.5,135a7.5,7.5,0,1,0-7.5,7.5,7.5,7.5,0,0,0,7.5-7.5Zm30-30a7.5,7.5,0,1,0-7.5,7.5,7.5,7.5,0,0,0,7.5-7.5Zm-30,60a7.5,7.5,0,1,0-7.5,7.5,7.5,7.5,0,0,0,7.5-7.5Z" transform="translate(-187.5 -37.5)" fill="#e88868"/>
+    <path id="Path_2779" data-name="Path 2779" d="M45,135H-15" transform="translate(202.5 -37.5)" fill="none" stroke="#e88868" stroke-width="5"/>
+    <path id="Path_2780" data-name="Path 2780" d="M52.5,135a7.5,7.5,0,1,0-7.5,7.5,7.5,7.5,0,0,0,7.5-7.5Z" transform="translate(142.5 -37.5)" fill="#e88868"/>
+    <path id="Path_2781" data-name="Path 2781" d="M75,225,45,195H-15m120,30H45" transform="translate(142.5 -187.5)" fill="none" stroke="#7dcdc7" stroke-width="5"/>
+    <path id="Path_2782" data-name="Path 2782" d="M112.5,225a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,112.5,225Zm-60-30a7.5,7.5,0,1,0-7.5,7.5,7.5,7.5,0,0,0,7.5-7.5Z" transform="translate(82.5 -187.5)" fill="#7dcdc7"/>
+    <path id="Path_2783" data-name="Path 2783" d="M75,105,45,135H-15m60-30H-15m120,0H45L15,75" transform="translate(142.5 22.5)" fill="none" stroke="#e88868" stroke-width="5"/>
+    <path id="Path_2784" data-name="Path 2784" d="M112.5,75a7.5,7.5,0,1,0-7.5,7.5A7.5,7.5,0,0,0,112.5,75Zm-30,60a7.5,7.5,0,1,0-7.5,7.5,7.5,7.5,0,0,0,7.5-7.5Zm0-30a7.5,7.5,0,1,0-7.5,7.5,7.5,7.5,0,0,0,7.5-7.5Z" transform="translate(52.5 22.5)" fill="#e88868"/>
+  </g>
+</svg>
