@@ -25,7 +25,7 @@ $('#owl-right-slider').owlCarousel({
     autoplaytimeout: 1000,
     rtl: true,
     loop: true,
-    // margin:10,
+    margin:20,
     nav:true,
     responsive:{
         0:{
@@ -46,7 +46,7 @@ $('#owl-right-slider').owlCarousel({
     autoplaytimeout: 1000,
     rtl: false,
     loop: true,
-    // margin:10,
+    margin: 20,
     nav:true,
     responsive:{
         0:{
