@@ -6,6 +6,14 @@ const typeWriter = new Typewriter('#typewriter', {
 });
 
 const typingSound = new Audio('../images/typingSound.wav');
+if(window.innerWidth <= 768 ){
+  typingSound.pause();
+}else {
+ typingSound.play();
+ typingSound.loop = true;
+typingSound.autoplay = true;
+setInterval(order, 1000)
+}
 
 typeWriter.typeString('setLightSwitch(on)')
 
@@ -21,16 +29,6 @@ typeWriter.pauseFor(7000)
 
 typeWriter.start();
 
-// for (let i= 0; i < 100; i++) {
-//   typingSound.loop = true;
-//   typingSound.play();
-//   setTimeout(() => typingSound.pause(), 3000)
-//   setTimeout(() => typingSound.play(), 8000)
-//   setTimeout(() => typingSound.pause(), 10000)
-// }
-
-typingSound.loop = true;
-typingSound.autoplay = true;
 
 function order() {
     typingSound.play();
@@ -42,7 +40,7 @@ function order() {
 
 }
 
-setInterval(order, 1000)
+
 
 
 
