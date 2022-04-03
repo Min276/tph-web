@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
 /*
 ! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
 */
@@ -1185,6 +1187,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
+.w-52{
+  width: 13rem;
+}
+
 .max-w-screen-xl{
   max-width: 1280px;
 }
@@ -1813,7 +1819,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 body{
-  font-family: 'Poppins', 'sans-serif'
+  font-family: 'Poppins', 'sans-serif';
+}
+
+#typewriter{
+  font-family: 'Noto Sans Mono', 'sans-serif';
 }
 
 .card-body{
@@ -1824,6 +1834,10 @@ body{
 .leading-11{
   line-height: 3rem;
   letter-spacing: 0.06rem;
+}
+
+.w-57 {
+  width: 14.5rem;
 }
 
 .w-28 {
@@ -2045,15 +2059,14 @@ body{
   }
 }
 
+.focus-within\:border-\[\#ffb700\]:focus-within{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 183 0 / var(--tw-border-opacity));
+}
+
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-105:hover{
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2083,8 +2096,8 @@ body{
   opacity: 0.5;
 }
 
-.hover\:opacity-0:hover{
-  opacity: 0;
+.hover\:opacity-70:hover{
+  opacity: 0.7;
 }
 
 .hover\:scale-95:hover{
@@ -2095,9 +2108,19 @@ body{
   transform: scale(1.4);
 }
 
+.focus\:border-\[\#ffb700\]:focus{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 183 0 / var(--tw-border-opacity));
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.focus-visible\:border-\[\#ffb700\]:focus-visible{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 183 0 / var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:block{
@@ -2228,6 +2251,10 @@ body{
     margin-top: -8.5rem;
   }
 
+  .md\:mt-\[-16rem\]{
+    margin-top: -16rem;
+  }
+
   .md\:mt-\[-1\.2rem\]{
     margin-top: -1.2rem;
   }
@@ -2296,8 +2323,8 @@ body{
     margin-top: 2rem;
   }
 
-  .md\:mt-\[-16rem\]{
-    margin-top: -16rem;
+  .md\:ml-\[-2rem\]{
+    margin-left: -2rem;
   }
 
   .md\:block{
@@ -2336,16 +2363,16 @@ body{
     width: 25%;
   }
 
-  .md\:w-96{
-    width: 24rem;
-  }
-
   .md\:w-\[32rem\]{
     width: 32rem;
   }
 
   .md\:w-40{
     width: 10rem;
+  }
+
+  .md\:w-96{
+    width: 24rem;
   }
 
   .md\:w-60{
@@ -2389,12 +2416,6 @@ body{
   .md\:scale-\[0\.36\]{
     --tw-scale-x: 0.36;
     --tw-scale-y: 0.36;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:scale-95{
-    --tw-scale-x: .95;
-    --tw-scale-y: .95;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -2576,10 +2597,6 @@ body{
 
   .md\:scale-90{
     transform: scale(0.9);
-  }
-
-  .md\:scale-95{
-    transform: scale(0.95);
   }
 
   .md\:right {

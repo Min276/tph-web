@@ -1,8 +1,8 @@
-const typeBox = document.getElementById("typewriter");
-const typeWriter = new Typewriter('#typewriter', {
+let typeBox = document.querySelector("#typewriter");
+const typeWrite = new Typewriter(typeBox, {
   // strings: ['setLightSwitch(on)', 'setLightSwitch(off)'],
   autoStart: true,
-  loop: true,
+  // loop: true,
 });
 
 const typingSound = new Audio('../images/typingSound.wav');
@@ -15,19 +15,19 @@ typingSound.autoplay = true;
 setInterval(order, 1000)
 }
 
-typeWriter.typeString('setLightSwitch(on)')
+typeWrite.typeOutHTMLString('setLightSwitch(off)')
 
-  typeWriter.pauseFor(5000)
+  typeWrite.pauseFor(5000)
   // typingSound.pause();
 
-typeWriter.deleteChars(10)
+typeWrite.deleteChars(11)
 
-typeWriter.typeString('Switch(off)')
+typeWrite.typeOutHTMLString('Switch(on)')
 
-typeWriter.pauseFor(7000)
+typeWrite.pauseFor(7000)
 // typingSound.pause();
 
-typeWriter.start();
+typeWrite.start();
 
 
 function order() {
@@ -37,8 +37,14 @@ function order() {
     setTimeout(() => typingSound.play(), 8500)
     setTimeout(() => typingSound.pause(), 9000)
     // setTimeout(() => typingSound.play(), 30000)
-
+    if(typeBox.textContent.includes("setLightSwitch(on)")){
+      console.log("LightSwitch(on)");
+   }else if(typeBox.textContent.includes("setLightSwitch(off)")) {
+      console.log("LightSwitch(off)");
+   }
+   
 }
+
 
 
 
