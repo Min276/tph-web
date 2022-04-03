@@ -347,3 +347,15 @@
          z-index: 2;
      }
 }
+
+@media (max-width: 499px) {
+    .course-detail{
+        flex-direction: column;
+    }
+    .course-title {
+       margin-bottom: 1rem;
+    }
+    .course-duration {
+        margin-bottom: 0.5rem;
+    }
+}

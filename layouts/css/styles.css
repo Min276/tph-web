@@ -1187,10 +1187,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }
 
-.w-52{
-  width: 13rem;
-}
-
 .max-w-screen-xl{
   max-width: 1280px;
 }
@@ -1589,6 +1585,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-20{
   padding-bottom: 5rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -2059,6 +2059,20 @@ body{
   }
 }
 
+@media (max-width: 499px) {
+  .course-detail{
+    flex-direction: column;
+  }
+
+  .course-title {
+    margin-bottom: 1rem;
+  }
+
+  .course-duration {
+    margin-bottom: 0.5rem;
+  }
+}
+
 .focus-within\:border-\[\#ffb700\]:focus-within{
   --tw-border-opacity: 1;
   border-color: rgb(255 183 0 / var(--tw-border-opacity));
@@ -2267,6 +2281,10 @@ body{
     margin-right: 3rem;
   }
 
+  .md\:ml-\[-2rem\]{
+    margin-left: -2rem;
+  }
+
   .md\:ml-\[1\.5rem\]{
     margin-left: 1.5rem;
   }
@@ -2321,10 +2339,6 @@ body{
 
   .md\:mt-8{
     margin-top: 2rem;
-  }
-
-  .md\:ml-\[-2rem\]{
-    margin-left: -2rem;
   }
 
   .md\:block{
