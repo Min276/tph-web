@@ -156,6 +156,7 @@
     }
     .banner-lg{
         transform: rotate(215deg) scale(1);
+        transition: all 0.2s ease;
     }
     .banner-lg:hover{
         transform: rotate(35deg) scale(1);
@@ -163,6 +164,7 @@
     }
     .sm-one{
         transform: rotate(215deg) scale(.7);
+        transition: all 0.2s ease;
     }
     .sm-one:hover{
         transform: rotate(35deg) scale(.7);
@@ -170,6 +172,7 @@
     }
     .lg-one{
         transform: rotate(215deg) scale(1.25);
+        transition: all 0.2s ease;
     }
     .lg-one:hover{
         transform: rotate(35deg) scale(1.25);
@@ -177,6 +180,7 @@
     }
     .sm-two{
         transform: rotate(130deg) scale(.7);
+        transition: all 0.2s ease;
     }
     .sm-two:hover{
         transform: rotate(310deg) scale(.7);
@@ -184,6 +188,7 @@
     }
     .lg-two{
         transform: rotate(130deg) scale(1.25);
+        transition: all 0.2s ease;
     }
     .lg-two:hover{
         transform: rotate(310deg) scale(1.25);
@@ -191,6 +196,7 @@
     }
     .sm-three{
         transform: rotate(345deg) scale(.7);
+        transition: all 0.2s ease;
     }
     .sm-three:hover{
         transform: rotate(135deg) scale(.7);
@@ -198,6 +204,7 @@
     }
     .lg-three{
         transform: rotate(345deg) scale(1.25);
+        transition: all 0.2s ease;
     }
     .lg-three:hover{
         transform: rotate(135deg) scale(1.25);

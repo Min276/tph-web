@@ -37,7 +37,7 @@ $('#owl-right-slider').owlCarousel({
             items: 2
         },
         1000:{
-            items: 2
+            items: 2.5
         }
     }
 })
@@ -60,7 +60,7 @@ $('#owl-right-slider').owlCarousel({
             items: 2
         },
         1000:{
-            items: 3
+            items: 3.5
         }
     }
 })

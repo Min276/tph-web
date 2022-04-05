@@ -14,6 +14,7 @@ if(window.innerWidth <= 768 ){
 typingSound.autoplay = true;
 setInterval(order, 1000)
 }
+typeWrite.start();
 
 typeWrite.typeOutHTMLString('setLightSwitch(off)')
 
@@ -26,8 +27,10 @@ typeWrite.typeOutHTMLString('Switch(on)')
 
 typeWrite.pauseFor(7000)
 // typingSound.pause();
-
-typeWrite.start();
+setInterval(() => {
+  let cursor = document.querySelector(".Typewriter__cursor");
+  cursor.style.display = "none";
+}, 15000)
 
 
 function order() {
@@ -42,6 +45,10 @@ function order() {
    }else if(typeBox.textContent.includes("setLightSwitch(off)")) {
       console.log("LightSwitch(off)");
    }
+
+   typeBox.textContent.length > 20 ?
+   typeBox.setAttribute("contenteditable", false):
+   typeBox.setAttribute("contenteditable", true);
    
 }
 
