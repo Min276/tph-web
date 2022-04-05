@@ -162,6 +162,14 @@
         transform: rotate(35deg) scale(1);
         transition: all 0.2s ease;
     }
+    .banner-sm{
+        transform: rotate(215deg) scale(.4);
+        transition: all 0.2s ease;
+    }
+    .banner-sm:hover{
+        transform: rotate(35deg) scale(.4);
+        transition: all 0.2s ease;
+    }
     .sm-one{
         transform: rotate(215deg) scale(.7);
         transition: all 0.2s ease;
@@ -342,6 +350,9 @@
     }
     .box-right .custom {
       order: 3;
+    }
+    .owl-dots {
+        display: none;
     }
 }
 

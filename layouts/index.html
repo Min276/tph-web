@@ -20,6 +20,14 @@
     .owl-prev, .owl-next {
         display: none;
     }
+    .owl-stage-outer {
+        padding-top: 3rem;
+    }
+    @media (min-width: 900px) {
+        .owl-dots {
+            display: none;
+        }
+    }
 </style>
 <body>
     
@@ -184,7 +192,7 @@
 
 <section class="relative w-full bg-[#7DCDC7] pt-20 pb-16">
     <div class="flex flex-col max-w-screen-xl px-6 mx-auto md:items-center md:justify-center md:px-6 md:flex-row lg:px-28">
-        <img class="absolute scale-60 hidden lg:block" style="top: -3em; right: 1.5em;" src="../images/circuit2.svg" alt="">
+        <!-- <img class="absolute scale-60 hidden lg:block" style="top: -3em; right: 1.5em;" src="../images/circuit2.svg" alt=""> -->
         <div class="w-full md:w-1/4 flex flex-col md:justify-center md:items-center">
             <div class="w-full text-white rounded-md">
                 <h3 class="text-2xl font-semibold my-10 leading-10 text-center md:text-left" style="letter-spacing: 0.03rem;">Thate Pan Hub <br> in Numbers</h3>
@@ -217,13 +225,13 @@
                 <h3 class="text-2xl font-semibold my-10 leading-10" style="letter-spacing: 0.03rem;">And <br> Still Counting</h3>
             </div>
         </div>
-        <img class="absolute scale-60 hidden lg:block" style="bottom: -3em; left: 1.5em;" src="../images/circuit.svg" alt="">
+        <!-- <img class="absolute scale-60 hidden lg:block" style="bottom: -3em; left: 1.5em;" src="../images/circuit.svg" alt=""> -->
     </div>
 </section>
 
-<section class="relative w-full text-[#57475b] pt-8 md:pt-36 md:pb-16">
-    <div class="flex flex-col max-w-screen-xl px-6 mx-auto md:items-center md:justify-between md:px-6 pb-16">
-        <img class="absolute scale-60 hidden md:block" style="top: 0em; left: 1.5em;" src="../images/Group 913.svg" alt="">
+<section class="relative w-full text-[#57475b] pt-8 md:pt-20">
+    <div class="flex flex-col w-full px-6 mx-auto md:items-center md:justify-between md:px-0 pb-16">
+        <!-- <img class="absolute scale-60 hidden md:block" style="top: 0em; left: 1.5em;" src="../images/Group 913.svg" alt=""> -->
         <div id="owl-right-slider" class="owl-carousel owl-theme flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
             <div class="w-full item text-[#57475b] rounded-md p-12 flex flex-col justify-center items-center" style="border: 2.5px solid #ffb700">
                 <img src="../images/profile.svg" alt="" style="width: 30%;">
@@ -254,44 +262,50 @@
                 <h5 class="text-base font-normal text-center">KST LEGAL</h5>
             </div>
         </div>
-        <img class="absolute scale-60 hidden md:block" style="bottom: 0em; right: 1.5em;" src="../images/Group 914.svg" alt="">
+        <!-- <img class="absolute scale-60 hidden md:block" style="bottom: 0em; right: 1.5em;" src="../images/Group 914.svg" alt=""> -->
     </div>
 </section>
 
 <section class="w-full text-white pb-4 md:pb-12">
-    <div class="flex flex-col max-w-screen-xl px-6 mx-auto md:items-center md:justify-between md:px-6 pb-16">
+    <div class="flex flex-col w-full px-6 mx-auto md:items-center md:justify-between md:px-0 pb-16">
         <div id="owl-left-slider" class="owl-carousel owl-theme flex flex-col flex-grow md:justify-center md:items-center md:flex-row">
-            <div class="w-full bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center md:mr-8">
+            <div class="w-full relative bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center md:mr-8">
+                <img class="absolute" style="width: 18%; left:3rem; top: -3rem" src="../assets/quote.svg" alt="">
                 <img src="../images/profile.svg" alt="" style="width: 80%;">
                 <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
                 <h3 class="text-base font-medium pt-1 leading-5 text-center">Name</h3>
                 <h4 class="text-base font-light leading-9 text-center">Brother of Student</h4>
             </div>
-            <div class="w-full bg-[#57475b] my-4 md:my-0 rounded-md p-12 flex flex-col justify-center items-center md:mr-8">
+            <div class="w-full relative bg-[#57475b] my-4 md:my-0 rounded-md p-12 flex flex-col justify-center items-center md:mr-8">
+                <img class="absolute" style="width: 18%; left:3rem; top: -3rem" src="../assets/quote.svg" alt="">
                 <img src="../images/profile.svg" alt="" style="width: 80%;">
                 <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
                 <h3 class="text-base font-medium pt-1 leading-5 text-center">Name</h3>
                 <h4 class="text-base font-light leading-9 text-center">Brother of Student</h4>
             </div>
-            <div class="w-full bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center">
+            <div class="w-full relative bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center">
+                <img class="absolute" style="width: 18%; left:3rem; top: -3rem" src="../assets/quote.svg" alt="">
                 <img src="../images/profile.svg" alt="" style="width: 80%;">
                 <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
                 <h3 class="text-base font-medium pt-1 leading-5 text-center">Name</h3>
                 <h4 class="text-base font-light leading-9 text-center">Brother of Student</h4>
             </div>
-            <div class="w-full bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center">
+            <div class="w-full relative bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center">
+                <img class="absolute" style="width: 18%; left:3rem; top: -3rem" src="../assets/quote.svg" alt="">
                 <img src="../images/profile.svg" alt="" style="width: 80%;">
                 <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
                 <h3 class="text-base font-medium pt-1 leading-5 text-center">Name</h3>
                 <h4 class="text-base font-light leading-9 text-center">Brother of Student</h4>
             </div>
-            <div class="w-full bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center">
+            <div class="w-full relative bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center">
+                <img class="absolute" style="width: 18%; left:3rem; top: -3rem" src="../assets/quote.svg" alt="">
                 <img src="../images/profile.svg" alt="" style="width: 80%;">
                 <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
                 <h3 class="text-base font-medium pt-1 leading-5 text-center">Name</h3>
                 <h4 class="text-base font-light leading-9 text-center">Brother of Student</h4>
             </div>
-            <div class="w-full bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center">
+            <div class="w-full relative bg-[#57475b] rounded-md p-12 flex flex-col justify-center items-center">
+                <img class="absolute" style="width: 18%; left:3rem; top: -3rem" src="../assets/quote.svg" alt="">
                 <img src="../images/profile.svg" alt="" style="width: 80%;">
                 <p class="text-base font-normal py-8 text-center" style="list-style: unset;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto veniam blanditiis enim dicta amet nesciunt consectetur a tenetur. Ipsam magni quia aliquam impedit excepturi beatae necessitatibus numquam dolore earum qui?</p>
                 <h3 class="text-base font-medium pt-1 leading-5 text-center">Name</h3>
